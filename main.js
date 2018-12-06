@@ -19,7 +19,7 @@ function draw() {
 	el.display();
 	
 	//display all the food
-	for(var i = 0; i < numFood; i++) {
+	for(var i = 0; i < feed.length; i++) {
 		feed[i].display();
 	}
 }
@@ -29,8 +29,12 @@ function mousePressed() {
 }
 
 function Food(x, y){
+	// keyword this
+	//makes variables public on the object
+	
+	//public instance variable
 	this.x = x;
-	this.t = y;
+	this.y = y;
 	this.color = color(255, 0, 0);
 	this.foodSize = 50;
 	
@@ -52,10 +56,23 @@ function Elephant() {
 		return dist;
 	}
 	
-	
+	this.eat = function() {
+		for(var i = 0; i < feed.length; i++){
+			var food = feed[i];
+			var d = this.getDistance(food);
+			var r1 = food.foodSize / 2;
+			var r2 = diameter / 2;
+			if(r1 + r2 > d) {
+				feed.splice(i, 1);
+			}
+		}
+	};
 
 	this.display = function() {
-		background('#FFFAED');
+		x = mouseX;
+		y = mouseY;
+		
+		
 	
 		//earRight
 		fill('#808080');
