@@ -39,3 +39,16 @@ dog's back.</p>
 <li>I am having sloppy Joes for lunch.</li>
 </ul>
 
+*   Candy.
+*   Gum.
+*   Booze.
+this:
+
++   Candy.
++   Gum.
++   Booze.
+and this:
+
+-   Candy.
+-   Gum.
+-   Booze.
