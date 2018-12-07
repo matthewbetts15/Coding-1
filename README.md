@@ -62,3 +62,8 @@ and this:
 <li><p>Good Sports Teams</p>
 <p>The best sports team in the NFL is a tie between three teams. The Chiefs, the Rams, and the Saints. The best NBA team is the LA Lakers</p></li>
 </ul>
+
+<p>I get 10 times more traffic from <a href="http://google.com/"
+title="Google">Google</a> than from <a href="http://search.yahoo.com/"
+title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/"
+title="MSN Search">MSN</a>.</p>
