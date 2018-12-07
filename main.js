@@ -97,9 +97,9 @@ function Elephant() {
 		
 		//nose
 		fill('#000000');
-		rect(x-30, y+15, 64, 200);
+		rect(x-30, y+15, 64, 130);
 		fill('#C4C5CB');
-		ellipse(x, y+215, 70, 70);
+		ellipse(x, y+145, 70, 70);
 		
 		//eyeLeft
 		fill('#FFFFFF');
