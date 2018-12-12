@@ -64,9 +64,12 @@ function Elephant() {
 			var r2 = diameter / 2;
 			if(r1 + r2 > d) {
 				feed.splice(i, 1);
+				feed.push(new Food(random(width), random(height)));
 			}
 		}
 	};
+	
+	
 
 	this.display = function() {
 		x = mouseX;
